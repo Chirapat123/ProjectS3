@@ -1,0 +1,180 @@
+.dashboard {
+  min-height: 100vh;
+  padding: 30px;
+  background: #f4f6f9;
+  box-sizing: border-box;
+}
+
+
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #222;
+}
+
+.dashboard-header p {
+  margin-top: 8px;
+  color: #777;
+}
+
+.simulation-time {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.simulation-time span {
+  display: block;
+  color: #777;
+  font-size: 14px;
+}
+
+.simulation-time strong {
+  display: block;
+  margin-top: 5px;
+  font-size: 24px;
+  color: #222;
+}
+
+
+.summary-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.summary-card {
+  flex: 1;
+  min-width: 180px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid;
+}
+
+.card-title {
+  color: #666;
+  font-size: 15px;
+}
+
+.card-value {
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.card-description {
+  margin-top: 3px;
+  color: #999;
+}
+
+/* Card colors */
+
+.summary-card.total {
+  border-color: #333;
+}
+
+.summary-card.total .card-value {
+  color: #333;
+}
+
+.summary-card.blue {
+  border-color: #2196f3;
+}
+
+.summary-card.blue .card-value {
+  color: #2196f3;
+}
+
+.summary-card.yellow {
+  border-color: #f2c200;
+}
+
+.summary-card.yellow .card-value {
+  color: #d9aa00;
+}
+
+.summary-card.red {
+  border-color: #f44336;
+}
+
+.summary-card.red .card-value {
+  color: #f44336;
+}
+
+.summary-card.green {
+  border-color: #4caf50;
+}
+
+.summary-card.green .card-value {
+  color: #4caf50;
+}
+
+/* Chart */
+
+.chart-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.chart-header h2 {
+  margin: 0;
+  color: #222;
+}
+
+.chart-header p {
+  margin-top: 6px;
+  color: #777;
+}
+
+.chart-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .dashboard {
+    padding: 15px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .simulation-time {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .summary-card {
+    min-width: calc(50% - 10px);
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .summary-card {
+    min-width: 100%;
+  }
+
+}
